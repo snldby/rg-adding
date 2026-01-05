@@ -20,3 +20,10 @@ module "rg3" {
     location = "centralindia"
 
 }
+
+module "rg4" {
+   source = "../module"
+    rg     = "my-new-group-7-jan"
+    location = "centralindia"
+
+}
