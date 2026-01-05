@@ -10,3 +10,9 @@ steps:
     backendAzureRmStorageAccountName: 'stg001212'
     backendAzureRmContainerName: 'tfstate'
     backendAzureRmKey: 'terraform.tfstate'
+
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    environmentServiceNameAzureRM: 'NewServCon'
