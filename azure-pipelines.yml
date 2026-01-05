@@ -4,6 +4,7 @@ trigger:
 pool: MyNewAgent
 steps:
 - task: TerraformTask@5
+  displayName: init
   inputs:
     provider: 'azurerm'
     command: 'init'
@@ -14,6 +15,7 @@ steps:
     backendAzureRmKey: 'terraform.tfstate'
 
 - task: TerraformTask@5
+  displayName: plan
   inputs:
     provider: 'azurerm'
     command: 'plan'
@@ -21,6 +23,7 @@ steps:
     environmentServiceNameAzureRM: 'NewServCon'
 
 - task: TerraformTask@5
+  displayName: apply
   inputs:
     provider: 'azurerm'
     command: 'apply'
