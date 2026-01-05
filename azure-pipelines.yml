@@ -1,0 +1,10 @@
+trigger: none
+pool: MyNewAgent
+steps:
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendAzureRmStorageAccountName: 'stg001212'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'terraform.tfstate'
