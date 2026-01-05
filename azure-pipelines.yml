@@ -1,4 +1,6 @@
-trigger: none
+trigger:
+- main
+- feature/*
 pool: MyNewAgent
 steps:
 - task: TerraformTask@5
