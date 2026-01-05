@@ -5,6 +5,8 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    backendServiceArm: 'NewServCon'
+    backendAzureRmResourceGroupName: 'storage-rg'
     backendAzureRmStorageAccountName: 'stg001212'
     backendAzureRmContainerName: 'tfstate'
     backendAzureRmKey: 'terraform.tfstate'
