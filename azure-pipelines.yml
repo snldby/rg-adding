@@ -5,8 +5,8 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/infra'
     backendServiceArm: 'NewServCon'
-    backendAzureRmResourceGroupName: 'storage-rg'
     backendAzureRmStorageAccountName: 'stg001212'
     backendAzureRmContainerName: 'tfstate'
     backendAzureRmKey: 'terraform.tfstate'
