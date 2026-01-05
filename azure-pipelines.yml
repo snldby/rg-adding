@@ -17,3 +17,10 @@ steps:
     command: 'plan'
     workingDirectory: '$(System.DefaultWorkingDirectory)/infra'
     environmentServiceNameAzureRM: 'NewServCon'
+
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/infra'
+    environmentServiceNameAzureRM: 'NewServCon'
