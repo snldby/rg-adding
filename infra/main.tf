@@ -12,3 +12,11 @@ module "rg2" {
     location = "centralindia"
 
 }
+
+
+module "rg3" {
+   source = "../module"
+    rg     = "my-new-group-5-jan"
+    location = "centralindia"
+
+}
