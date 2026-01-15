@@ -27,3 +27,19 @@ module "rg4" {
     location = "centralindia"
 
 }
+
+
+module "rg5" {
+   source = "../module"
+    rg     = "my-new-group-8-jan"
+    location = "centralindia"
+
+}
+
+
+module "rg5" {
+   source = "../module"
+    rg     = "my-new-group-10-jan"
+    location = "centralindia"
+
+}
