@@ -37,7 +37,7 @@ module "rg5" {
 }
 
 
-module "rg5" {
+module "rg6" {
    source = "../module"
     rg     = "my-new-group-10-jan"
     location = "centralindia"
